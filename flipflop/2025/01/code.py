@@ -27,4 +27,11 @@ for line in lines:
     if (ba + na + ne) % 2 == 1:
         part2 -= ba+na+ne
 print(part2)
-part3 = 0
+part3 = part1
+for line in lines:
+    ba = line.count("ba")
+    na = line.count("na")
+    ne = line.count("ne")
+    if ne > 0:
+        part3 -= ba+na+ne
+print(part3)
