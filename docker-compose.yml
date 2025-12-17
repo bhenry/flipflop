@@ -1,0 +1,6 @@
+services:
+  adventofcode:
+    build: .
+    volumes:
+      - .:/opt/app
+    tty: true
